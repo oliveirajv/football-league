@@ -1,2 +1,3 @@
-# Soccer-league
- See soccer teams, player of these teams, matches, goals and much more.
+# Soccer League
+ 
+ See CRUD of soccer teams, CRUD of players from these teams, matches, goals and much more.
