@@ -1,0 +1,69 @@
+{
+  "times": [
+    {
+      "id": 1,
+      "nome": "Chapecoense",
+      "estado": "SC",
+      "torcida": 100000,
+      "fundacao_ano": 1973,
+      "info": "O time de todos os brasileiros"
+    },
+    {
+      "id": 2,
+      "nome": "Vitoria",
+      "estado": "BA",
+      "torcida": 100000,
+      "fundacao_ano": 1973,
+      "info": "Um time não tão vitoriosozos"
+    },
+    {
+      "nome": "Flamengo",
+      "estado": "RJ",
+      "torcida": "999999999",
+      "fundacao_ano": "1985",
+      "info": "Nana do nana do guarana do ludovico",
+      "id": 3
+    }
+  ],
+  "jogadores": [
+    {
+      "id": 1,
+      "time_id": 1,
+      "nome": "Jorge"
+    },
+    {
+      "id": 2,
+      "time_id": 1,
+      "nome": "Mateus"
+    },
+    {
+      "id": 1,
+      "time_id": 2,
+      "nome": "Joao"
+    },
+    {
+      "id": 2,
+      "time_id": 2,
+      "nome": "Neydevar"
+    }
+  ],
+  "partidas": [
+    {
+      "id": 1,
+      "time_casa": 1,
+      "time_fora": 2
+    }
+  ],
+  "gols": [
+    {
+      "id": 1,
+      "partida_id": 1,
+      "jogador_id": 1
+    },
+    {
+      "id": 1,
+      "partida_id": 1,
+      "jogador_id": 2
+    }
+  ]
+}
