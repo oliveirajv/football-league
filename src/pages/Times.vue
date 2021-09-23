@@ -1,6 +1,6 @@
 <template>
   <router-link to="/">Voltar</router-link>
-  <div class="columns is-vcentered">
+  <div class="columns">
     <div class="column">
       <Formulario/>
     </div>
