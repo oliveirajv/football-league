@@ -5,7 +5,7 @@
       "estado": "SC",
       "torcida": "100000",
       "fundacao_ano": "1973",
-      "info": "O time de todos os brasileiros.",
+      "info": "O time de todos os brasileirinhos.",
       "id": 1
     },
     {
@@ -21,8 +21,16 @@
       "estado": "RJ",
       "torcida": "100000000000",
       "fundacao_ano": "1895",
-      "info": "Que emoção no coração, mengão queridão.",
+      "info": "Que emoção no coração.",
       "id": 3
+    },
+    {
+      "nome": "Botafogo",
+      "estado": "RJ",
+      "torcida": "10",
+      "fundacao_ano": "1910",
+      "info": "O herói em cada jogo.",
+      "id": 4
     }
   ],
   "jogadores": [

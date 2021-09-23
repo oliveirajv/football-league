@@ -1,7 +1,13 @@
 <template>
   <router-link to="/">Voltar</router-link>
-  <Formulario/>
-  <Tabela/>
+  <div class="columns is-vcentered">
+    <div class="column">
+      <Formulario/>
+    </div>
+    <div class="column">
+      <Tabela/>
+    </div>
+  </div>
 </template>
 
 <script>
