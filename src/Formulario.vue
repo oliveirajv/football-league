@@ -6,8 +6,8 @@
     <Campo nome="fundacao" tipo="number" v-model="time.fundacao_ano"></Campo>
     <CampoText tipo="texto" nome="info" v-model="time.info"></CampoText>
 
-    <span v-if="carregando">carregando...</span>
-    <button v-else @click="salvar">salvar</button>
+    <span class="button is-loading" v-if="carregando">carregando...</span>
+    <button class="button is-success" v-else @click="salvar">salvar</button>
   </div>
 </template>
 <script>

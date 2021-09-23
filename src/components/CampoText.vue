@@ -1,13 +1,15 @@
 <template>
-  <div class="col-12">
-    <label :for="nome" class="form-label">{{ nome }}</label>
-    <textarea
-      class="form-control"
-      :id="nome"
-      :placeholder="nome"
-      :value="modelValue"
-      @input="$emit('update:modelValue', $event.target.value)">
-    </textarea>
+  <div class="block">
+    <label :for="nome">{{ nome }}</label>
+    <div class="control">
+      <textarea
+          class="textarea"
+          :id="nome"
+          :placeholder="nome"
+          :value="modelValue"
+          @input="$emit('update:modelValue', $event.target.value)">
+      </textarea>
+    </div>
   </div>
 </template>
 
@@ -25,5 +27,7 @@ export default {
 </script>
 
 <style>
-
+.block:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
 </style>

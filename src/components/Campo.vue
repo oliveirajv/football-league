@@ -1,8 +1,8 @@
 <template>
-  <div class="col-12">
-    <label :for="nome" class="form-label">{{ nome }}</label>
+  <div class="block">
+    <label :for="nome">{{ nome }}</label>
     <input :type="tipo"
-     class="form-control"
+     class="input"
      :id="nome"
      :placeholder="nome"
      :value="modelValue"
@@ -24,5 +24,7 @@ export default {
 </script>
 
 <style>
-
+.block:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
 </style>

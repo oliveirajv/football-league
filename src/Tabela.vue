@@ -18,11 +18,11 @@
         <td>{{ time.fundacao_ano }}</td>
         <td>{{ time.info }}</td>
         <td>
-          <button class="colorido" @click="editar(time)">editar</button>
+          <button class="button is-info" @click="editar(time)">editar</button>
         </td>
         <td>
-          <span v-if="carregando">carregando</span>
-          <button v-else @click="apagar(time)">apagar</button>
+          <span class="button is-loading" v-if="carregando">carregando</span>
+          <button class="button is-danger" v-else @click="apagar(time)">apagar</button>
         </td>
       </tr>
       </tbody>

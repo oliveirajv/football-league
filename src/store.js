@@ -53,20 +53,15 @@ const store = createStore({
     },
     async criar({commit}, time) {
       commit('carregando')
-      await axios.post(
-        TIMESURL,
-        {...time}
-      )
-      commit('time_criar', time)
-
+      await axios.post(TIMESURL,{...time}).then((Data) => {
+        time.id = Data.data.id
+        commit('time_criar', time)
+      })
     },
     async editar({commit}, {original, editado}) {
       commit('carregando')
 
-      await axios.put(
-        `${TIMESURL}/${original.id}`,
-        {...editado}
-      )
+      await axios.put(`${TIMESURL}/${original.id}`, {...editado})
       commit('time_editar', {original, editado})
     }
   }

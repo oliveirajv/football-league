@@ -3,25 +3,25 @@
     {
       "nome": "Chapecoense",
       "estado": "SC",
-      "torcida": 100000,
-      "fundacao_ano": 1973,
-      "info": "O time de todos os brasileiros",
+      "torcida": "100000",
+      "fundacao_ano": "1973",
+      "info": "O time de todos os brasileiros.",
       "id": 1
     },
     {
       "nome": "Vitoria",
       "estado": "BA",
       "torcida": 100000,
-      "fundacao_ano": 1973,
+      "fundacao_ano": 1899,
       "info": "Um time não tão vitorioso.",
       "id": 2
     },
     {
-      "nome": "Botafogo",
+      "nome": "Flamengo",
       "estado": "RJ",
-      "torcida": "10",
-      "fundacao_ano": "1910",
-      "info": "O herói em cada jogo.",
+      "torcida": "9999999999999999999999",
+      "fundacao_ano": "1895",
+      "info": "Que emoção no coração, mengão queridão.",
       "id": 3
     }
   ],

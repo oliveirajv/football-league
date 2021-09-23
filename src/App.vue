@@ -1,5 +1,5 @@
 <template>
-  <h3>Times</h3>
+  <h1>Times</h1>
   <Formulario/>
   <Tabela/>
 </template>
