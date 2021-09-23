@@ -1,12 +1,33 @@
 const TIMESURL = 'http://localhost:3000/times'
 
 const ESTADOS = [
-  'RJ',
-  'SP',
-  'RS',
-  'SC',
+  'AC',
+  'AL',
+  'AP',
+  'AM',  
   'BA',
-  'MG'
+  'CE',
+  'DF',
+  'ES',
+  'GO',
+  'MA',
+  'MT',
+  'MS',
+  'MG',
+  'PA',
+  'PB',
+  'PR',
+  'PE',
+  'PI',
+  'RJ',
+  'RN',
+  'RS',
+  'RO',
+  'RR',  
+  'SC',
+  'SP',
+  'SE',
+  'TO'
 ]
 
 const POSICAO = [

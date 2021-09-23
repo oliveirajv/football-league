@@ -65,7 +65,7 @@ const store = createStore({
 
       await axios.put(
         `${TIMESURL}/${original.id}`,
-        {...editando}
+        {...editado}
       )
       commit('time_editar', {original, editado})
     }

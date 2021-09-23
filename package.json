@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "axios": "^0.21.1",
+    "buefy": "^0.9.10",
     "mitt": "^3.0.0",
     "vue": "^3.0.5",
     "vue-router": "^4.0.11",

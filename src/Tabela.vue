@@ -1,6 +1,6 @@
 <template>
   <div>
-    <table>
+    <table class="table is-hoverable">
       <thead>
       <tr>
         <th>Nome</th>

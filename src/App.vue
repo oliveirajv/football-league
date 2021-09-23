@@ -1,7 +1,7 @@
 <template>
   <h3>Times</h3>
-  <Tabela/>
   <Formulario/>
+  <Tabela/>
 </template>
 
 <script>
@@ -11,10 +11,10 @@ import Tabela from './Tabela.vue'
 let timeNovo = () => {
   return {
     'id': 'INCREMENT',
-    'name': '',
-    'state': '',
-    'crowd': '',
-    'foundation_year': '',
+    'nome': '',
+    'estado': '',
+    'torcida': '',
+    'fundacao_ano': '',
     'info': ''
   }
 }

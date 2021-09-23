@@ -1,27 +1,27 @@
 {
   "times": [
     {
-      "id": 1,
       "nome": "Chapecoense",
       "estado": "SC",
       "torcida": 100000,
       "fundacao_ano": 1973,
-      "info": "O time de todos os brasileiros"
+      "info": "O time de todos os brasileiros",
+      "id": 1
     },
     {
-      "id": 2,
       "nome": "Vitoria",
       "estado": "BA",
       "torcida": 100000,
       "fundacao_ano": 1973,
-      "info": "Um time não tão vitoriosozos"
+      "info": "Um time não tão vitorioso.",
+      "id": 2
     },
     {
-      "nome": "Flamengo",
+      "nome": "Botafogo",
       "estado": "RJ",
-      "torcida": "999999999",
-      "fundacao_ano": "1985",
-      "info": "Nana do nana do guarana do ludovico",
+      "torcida": "10",
+      "fundacao_ano": "1910",
+      "info": "O herói em cada jogo.",
       "id": 3
     }
   ],

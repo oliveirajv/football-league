@@ -1,6 +1,5 @@
 <template>
   <div>
-
     <Campo nome="nome" v-model="time.nome"></Campo>
     <CampoDropDown nome="estado" v-model="time.estado" :itens="ESTADOS"></CampoDropDown>
     <Campo nome="torcida" tipo="number" v-model="time.torcida"></Campo>
