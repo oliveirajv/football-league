@@ -5,8 +5,7 @@
       <tr>
         <th>Nome</th>
         <th>Estado</th>
-        <th>Torcida</th>
-        <th>Ano</th>
+        <th>Gols</th>
         <th>info</th>
       </tr>
       </thead>
@@ -14,8 +13,7 @@
       <tr v-for="(time, index) in times">
         <td>{{ time.nome }}</td>
         <td>{{ time.estado }}</td>
-        <td>{{ time.torcida }}</td>
-        <td>{{ time.fundacao_ano }}</td>
+        <td>{{ time.gols }}</td>
         <td>{{ time.info }}</td>
         <td>
           <button class="button is-info" @click="editar(time)">editar</button>
@@ -41,7 +39,7 @@ export default {
   },
   methods: {
     ...mapActions(['apagar']),
-    editar(time){
+    editar(time) {
       this.$bus.emit('editar', time)
     }
   }

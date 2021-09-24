@@ -1,4 +1,6 @@
 const TIMESURL = 'http://localhost:3000/times'
+const JOGADORESURL = 'http://localhost:3000/jogadores'
+const PARTIDASURL = 'http://localhost:3000/partidas'
 
 const ESTADOS = [
   'AC',
@@ -41,5 +43,5 @@ const POSICAO = [
   'Ponta esquerda',
 ]
 
-export { ESTADOS, TIMESURL, POSICAO }
+export { ESTADOS, TIMESURL, JOGADORESURL, PARTIDASURL, POSICAO }
 

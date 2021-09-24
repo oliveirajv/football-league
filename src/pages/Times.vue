@@ -1,5 +1,5 @@
 <template>
-  <router-link to="/">Voltar</router-link>
+  <router-link class="button " to="/">Voltar</router-link>
   <div class="columns">
     <div class="column">
       <Formulario/>
@@ -19,15 +19,14 @@ let timeNovo = () => {
     'id': 'INCREMENT',
     'nome': '',
     'estado': '',
-    'torcida': '',
-    'fundacao_ano': '',
+    'gols': '',
     'info': ''
   }
 }
 
 export default {
   name: "Times",
-  components: { Tabela, Formulario },
+  components: {Tabela, Formulario},
   mounted() {
     this.$store.dispatch('carregar')
   }

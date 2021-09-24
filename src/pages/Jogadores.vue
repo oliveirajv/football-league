@@ -8,7 +8,7 @@
 import Formulario from '../Formulario'
 import Tabela from '../Tabela.vue'
 
-let timeNovo = () => {
+let jogadorNovo = () => {
   return {
     'id': 'INCREMENT',
     'nome': '',

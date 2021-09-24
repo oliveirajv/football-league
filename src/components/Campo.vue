@@ -2,11 +2,11 @@
   <div class="block">
     <label :for="nome">{{ nome }}</label>
     <input :type="tipo"
-     class="input"
-     :id="nome"
-     :placeholder="nome"
-     :value="modelValue"
-     @input="$emit('update:modelValue', $event.target.value)">
+           class="input"
+           :id="nome"
+           :placeholder="nome"
+           :value="modelValue"
+           @input="$emit('update:modelValue', $event.target.value)">
   </div>
 </template>
 

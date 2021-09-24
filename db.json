@@ -3,46 +3,35 @@
     {
       "nome": "Chapecoense",
       "estado": "SC",
-      "torcida": "100000",
-      "fundacao_ano": "1973",
+      "gols": 10,
       "info": "O time de todos os brasileirinhos.",
       "id": 1
     },
     {
       "nome": "Vitoria",
       "estado": "BA",
-      "torcida": 100000,
-      "fundacao_ano": 1899,
+      "gols": 18,
       "info": "Um time não tão vitorioso.",
       "id": 2
     },
     {
       "nome": "Flamengo",
       "estado": "RJ",
-      "torcida": "100000000000",
-      "fundacao_ano": "1895",
+      "gols": 15,
       "info": "Que emoção no coração.",
       "id": 3
-    },
-    {
-      "nome": "Botafogo",
-      "estado": "RJ",
-      "torcida": "10",
-      "fundacao_ano": "1910",
-      "info": "O herói em cada jogo.",
-      "id": 4
     }
   ],
   "jogadores": [
     {
       "id": 1,
       "time_id": 1,
-      "nome": "Jorge"
+      "nome": "Jorge Ramos"
     },
     {
       "id": 2,
       "time_id": 1,
-      "nome": "Mateus"
+      "nome": "Memphis Depay"
     },
     {
       "id": 1,
@@ -52,7 +41,7 @@
     {
       "id": 2,
       "time_id": 2,
-      "nome": "Neydevar"
+      "nome": "Neymar"
     }
   ],
   "partidas": [
