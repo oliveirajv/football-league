@@ -20,7 +20,7 @@
         </td>
         <td>
           <span class="button is-loading" v-if="carregando">carregando</span>
-          <button class="button is-danger" v-else @click="apagar(time)">apagar</button>
+          <button class="button is-danger" v-else @click="actions_time_apagar(time)">apagar</button>
         </td>
       </tr>
       </tbody>
@@ -32,13 +32,13 @@
 import {mapState, mapActions} from 'vuex'
 
 export default {
-  name: 'Tabela',
+  name: 'tabela_times',
 
   computed: {
     ...mapState(['times', 'carregando']),
   },
   methods: {
-    ...mapActions(['apagar']),
+    ...mapActions(['actions_time_apagar']),
     editar(time) {
       this.$bus.emit('editar', time)
     }

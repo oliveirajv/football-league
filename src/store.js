@@ -1,6 +1,6 @@
 import {createStore} from 'vuex'
 import axios from 'axios'
-import {TIMESURL} from './const.js'
+import {TIMESURL, JOGADORESURL} from './const.js'
 
 const store = createStore({
     state() {  // equivalente ao data de um componente
@@ -37,31 +37,60 @@ const store = createStore({
         }
     },
     actions: { // equivalente ao methods de um componente
-        async carregar({commit}) {
+        // Actions dos times.
+        async actions_times_carregar({commit}) {
             commit('carregando')
 
             axios.get(TIMESURL).then(({data}) => {
                 commit('time_carregado', data)
             })
         },
-        async apagar({commit}, time) {
+        async actions_time_apagar({commit}, time) {
             commit('carregando')
 
             await axios.delete(`${TIMESURL}/${time.id}`)
             commit('time_apagar', time)
 
         },
-        async criar({commit}, time) {
+        async actions_time_criar({commit}, time) {
             commit('carregando')
             await axios.post(TIMESURL, {...time}).then((Data) => {
                 time.id = Data.data.id
                 commit('time_criar', time)
             })
         },
-        async editar({commit}, {original, editado}) {
+        async actions_time_editar({commit}, {original, editado}) {
             commit('carregando')
 
             await axios.put(`${TIMESURL}/${original.id}`, {...editado})
+            commit('time_editar', {original, editado})
+        },
+        // Actions dos Jogadores.
+        async actions_jogadores_carregar({commit}) {
+            commit('carregando')
+
+            axios.get(JOGADORESURL).then(({data}) => {
+                commit('time_carregado', data)
+            })
+        },
+        async actions_jogador_apagar({commit}, time) {
+            commit('carregando')
+
+            await axios.delete(`${JOGADORESURL}/${time.id}`)
+            commit('time_apagar', time)
+
+        },
+        async actions_jogador_criar({commit}, time) {
+            commit('carregando')
+            await axios.post(JOGADORESURL, {...time}).then((Data) => {
+                time.id = Data.data.id
+                commit('time_criar', time)
+            })
+        },
+        async actions_jogador_editar({commit}, {original, editado}) {
+            commit('carregando')
+
+            await axios.put(`${JOGADORESURL}/${original.id}`, {...editado})
             commit('time_editar', {original, editado})
         }
     }

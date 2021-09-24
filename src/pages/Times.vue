@@ -2,17 +2,17 @@
   <router-link class="button " to="/">Voltar</router-link>
   <div class="columns">
     <div class="column">
-      <Formulario/>
+      <formulario_times/>
     </div>
     <div class="column">
-      <Tabela/>
+      <tabela_times/>
     </div>
   </div>
 </template>
 
 <script>
-import Formulario from '../Formulario.vue'
-import Tabela from '../Tabela.vue'
+import formulario_times from '../formulario_times.vue'
+import tabela_times from '../tabela_times.vue'
 
 let timeNovo = () => {
   return {
@@ -26,9 +26,9 @@ let timeNovo = () => {
 
 export default {
   name: "Times",
-  components: {Tabela, Formulario},
+  components: {tabela_times, formulario_times},
   mounted() {
-    this.$store.dispatch('carregar')
+    this.$store.dispatch('actions_times_carregar')
   }
 }
 </script>

@@ -1,12 +1,12 @@
 <template>
-  <h3>Times</h3>
-  <Formulario/>
-  <Tabela/>
+  <h3>Time Flamengo</h3>
+  <formulario_times/>
+  <tabela_times/>
 </template>
 
 <script>
-import Formulario from '../Formulario'
-import Tabela from '../Tabela.vue'
+import formulario_times from '../formulario_times.vue'
+import tabela_times from '../tabela_times.vue'
 
 let jogadorNovo = () => {
   return {
@@ -17,8 +17,8 @@ let jogadorNovo = () => {
 }
 
 export default {
-  name: "Jogadores",
-  components: {Tabela, Formulario},
+  name: "Time",
+  components: {tabela_times, formulario_times},
   mounted() {
     this.$store.dispatch('carregar')
   }

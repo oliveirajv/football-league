@@ -18,7 +18,7 @@ import CampoDropDown from './components/CampoDropDown.vue'
 import CampoText from './components/CampoText.vue'
 
 export default {
-  name: 'Formulario',
+  name: 'formulario_times',
   components: {Campo, CampoDropDown, CampoText},
   data() {
     return {
@@ -34,14 +34,14 @@ export default {
   methods: {
     async salvar() {
       if (this.editando) {
-        await this.$store.dispatch('editar', {
+        await this.$store.dispatch('actions_time_editar', {
           original: this.editando,
           editado: this.time
         })
         this.editando = false
         this.time = {}
       } else {
-        await this.$store.dispatch('criar', this.time)
+        await this.$store.dispatch('actions_time_criar', this.time)
         this.time = {}
       }
     }
