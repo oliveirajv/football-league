@@ -13,25 +13,24 @@
       "gols": 18,
       "info": "Um time não tão vitorioso.",
       "id": 2
-    },
-    {
-      "nome": "Flamengo",
-      "estado": "RJ",
-      "gols": 15,
-      "info": "Que emoção no coração.",
-      "id": 3
     }
   ],
   "jogadores": [
     {
-      "id": 1,
+      "nome": "Jorge Ramos",
+      "camisa": 3,
+      "gols": 1,
+      "posicao": "Zagueiro",
       "time_id": 1,
-      "nome": "Jorge Ramos"
+      "id": 1
     },
     {
-      "id": 2,
+      "nome": "Memphis Depay",
+      "camisa": 3,
+      "gols": 1,
+      "posicao": "Centroavante",
       "time_id": 1,
-      "nome": "Memphis Depay"
+      "id": 1
     },
     {
       "id": 1,

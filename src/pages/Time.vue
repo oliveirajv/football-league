@@ -1,26 +1,26 @@
 <template>
   <h3>Time Flamengo</h3>
-  <formulario_times/>
-  <tabela_times/>
+  <tabela_time/>
 </template>
 
 <script>
-import formulario_times from '../formulario_times.vue'
-import tabela_times from '../tabela_times.vue'
+import tabela_time from '../tabela_time.vue'
 
 let jogadorNovo = () => {
   return {
     'id': 'INCREMENT',
     'nome': '',
-    'gols': ''
+    'camisa': '',
+    'gols': '',
+
   }
 }
 
 export default {
   name: "Time",
-  components: {tabela_times, formulario_times},
+  components: {tabela_time},
   mounted() {
-    this.$store.dispatch('carregar')
+    this.$store.dispatch('actions_jogadores_carregar')
   }
 }
 </script>

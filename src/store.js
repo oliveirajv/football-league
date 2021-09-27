@@ -20,6 +20,10 @@ const store = createStore({
             state.times = times
             state.carregando = false
         },
+        jogador_carregado(state, jogadores) {
+            state.jogadores = jogadores
+            state.carregando = false
+        },
         time_apagar(state, time) {
             let index = state.times.indexOf(time)
             if (index >= 0) {
@@ -27,12 +31,27 @@ const store = createStore({
             }
             state.carregando = false
         },
+        jogador_apagar(state, jogador) {
+            let index = state.jogadores.indexOf(jogador)
+            if (index >= 0) {
+                state.jogadores.splice(index, 1)
+            }
+            state.carregando = false
+        },
         time_editar(state, {original, editado}) {
+            Object.assign(original, editado)
+            state.carregando = false
+        },
+        jogador_editar(state, {original, editado}) {
             Object.assign(original, editado)
             state.carregando = false
         },
         time_criar(state, time) {
             state.times.push(time)
+            state.carregando = false
+        },
+        jogador_criar(state, jogador) {
+            state.jogadores.push(jogador)
             state.carregando = false
         }
     },
@@ -73,18 +92,18 @@ const store = createStore({
                 commit('time_carregado', data)
             })
         },
-        async actions_jogador_apagar({commit}, time) {
+        async actions_jogador_apagar({commit}, jogador) {
             commit('carregando')
 
-            await axios.delete(`${JOGADORESURL}/${time.id}`)
-            commit('time_apagar', time)
+            await axios.delete(`${JOGADORESURL}/${jogador.id}`)
+            commit('time_apagar', jogador)
 
         },
-        async actions_jogador_criar({commit}, time) {
+        async actions_jogador_criar({commit}, jogador) {
             commit('carregando')
-            await axios.post(JOGADORESURL, {...time}).then((Data) => {
-                time.id = Data.data.id
-                commit('time_criar', time)
+            await axios.post(JOGADORESURL, {...jogador}).then((Data) => {
+                jogador.id = Data.data.id
+                commit('time_criar', jogador)
             })
         },
         async actions_jogador_editar({commit}, {original, editado}) {

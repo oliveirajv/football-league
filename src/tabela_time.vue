@@ -4,26 +4,24 @@
       <thead>
       <tr>
         <th>Nome</th>
-        <th>Estado</th>
+        <th>Camisa</th>
         <th>Gols</th>
-        <th>info</th>
-        <th>Editar</th>
-        <th>Apagar</th>
+        <th>Posição</th>
       </tr>
       </thead>
       <tbody>
       <tr v-for="(time, index) in times">
-        <td>{{ time.nome }}</td>
-        <td>{{ time.estado }}</td>
-        <td>{{ time.gols }}</td>
-        <td>{{ time.info }}</td>
+        <td>{{ jogador.nome }}</td>
+        <td>{{ jogador.camisa }}</td>
+        <td>{{ jogadore.gols }}</td>
+        <td>{{ jogador.posicao }}</td>
+        <td>{{ jogadores }}</td>
         <td>
-          <button class="button is-small is-info" @click="editar(time)">editar</button>
+          <button class="button is-info" @click="editar(time)">editar</button>
         </td>
         <td>
           <span class="button is-loading" v-if="carregando">carregando</span>
-          <button class="button is-small is-danger" v-else @click="actions_time_apagar(time)">apagar</button>
-<!--          <router-link class="button is-small is-link" :to="{name: time}"></router-link>-->
+          <button class="button is-danger" v-else @click="actions_time_apagar(time)">apagar</button>
         </td>
       </tr>
       </tbody>
