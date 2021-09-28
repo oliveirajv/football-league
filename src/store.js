@@ -6,11 +6,16 @@ const store = createStore({
     state() {  // equivalente ao data de um componente
         return {
             carregando: false,
-            times: []
+            times: [],
+            token: null
         }
     },
     getters: { // equivalente ao computed de um componente
-
+        pegarTime(state) {
+            return function (codigo) {
+                return state.times.filter(t => t.codigo === codigo)[0]
+            }
+        }
     },
     mutations: { // altera o state
         carregando(state) {
@@ -89,28 +94,28 @@ const store = createStore({
             commit('carregando')
 
             axios.get(JOGADORESURL).then(({data}) => {
-                commit('time_carregado', data)
+                commit('jogador_carregado', data)
             })
         },
         async actions_jogador_apagar({commit}, jogador) {
             commit('carregando')
 
             await axios.delete(`${JOGADORESURL}/${jogador.id}`)
-            commit('time_apagar', jogador)
+            commit('jogador_apagar', jogador)
 
         },
         async actions_jogador_criar({commit}, jogador) {
             commit('carregando')
             await axios.post(JOGADORESURL, {...jogador}).then((Data) => {
                 jogador.id = Data.data.id
-                commit('time_criar', jogador)
+                commit('jogador_criar', jogador)
             })
         },
         async actions_jogador_editar({commit}, {original, editado}) {
             commit('carregando')
 
             await axios.put(`${JOGADORESURL}/${original.id}`, {...editado})
-            commit('time_editar', {original, editado})
+            commit('jogador_editar', {original, editado})
         }
     }
 })

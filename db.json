@@ -19,28 +19,34 @@
     {
       "nome": "Jorge Ramos",
       "camisa": 3,
-      "gols": 1,
+      "gols": 0,
       "posicao": "Zagueiro",
       "time_id": 1,
       "id": 1
     },
     {
       "nome": "Memphis Depay",
-      "camisa": 3,
-      "gols": 1,
+      "camisa": 9,
+      "gols": 0,
       "posicao": "Centroavante",
       "time_id": 1,
+      "id": 2
+    },
+    {
+      "nome": "Lucas Paquetá",
+      "camisa": 10,
+      "gols": 1,
+      "posicao": "Meio-campo",
+      "time_id": 2,
       "id": 1
     },
     {
-      "id": 1,
+      "nome": "Neymar Jr.",
+      "camisa": 10,
+      "gols": 1,
+      "posicao": "Ponta esquerda",
       "time_id": 2,
-      "nome": "Joao"
-    },
-    {
-      "id": 2,
-      "time_id": 2,
-      "nome": "Neymar"
+      "id": 2
     }
   ],
   "partidas": [
