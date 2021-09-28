@@ -7,6 +7,7 @@ const store = createStore({
         return {
             carregando: false,
             times: [],
+            jogadores: [],
             token: null
         }
     },
@@ -14,6 +15,13 @@ const store = createStore({
         pegarTime(state) {
             return function (codigo) {
               return state.times.filter(t => t.id === codigo)[0]
+            }
+        },
+        pegarJogadores(state) {
+            return function (codigo) {
+                let teste = state.jogadores.filter(j => j.timeId === codigo)[0]
+                debugger
+                return teste
             }
         }
     },

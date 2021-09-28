@@ -1,5 +1,5 @@
 <template>
-  <router-link class="button " to="/times">Voltar</router-link>
+  <router-link class="button" to="/times">Voltar</router-link>
   <div>
     <tabela_time/>
   </div>
@@ -25,7 +25,8 @@ export default {
   components: {tabela_time},
   mounted() {
     this.$store.dispatch('actions_times_carregar')
-  }
+    this.$store.dispatch('actions_jogadores_carregar')
+  },
 }
 </script>
 

@@ -3,6 +3,7 @@
     <h1>{{ codigo }}</h1>
     <h1>Time: {{ time.nome }}</h1>
     <h1>Estado: {{ time.estado }}</h1>
+    <h1>{{ jogadores.nome }}</h1>
 <!--    <ul>-->
 <!--      <li v-for="time in time.times">-->
 <!--        <router-link :to="{name: 'time', params: {codigo: time.id }}">-->
@@ -43,12 +44,15 @@ import {mapGetters, mapActions} from 'vuex'
 export default {
   name: 'tabela_time',
   computed: {
-    ...mapGetters(['pegarTime']),
+    ...mapGetters(['pegarTime', 'pegarJogadores']),
     codigo() {
       return this.$route.params.id
     },
     time() {
       return this.pegarTime(this.codigo)
+    },
+    jogadores() {
+      return this.pegarJogadores(this.codigo)
     }
   },
   methods: {
