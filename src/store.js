@@ -13,7 +13,9 @@ const store = createStore({
     getters: { // equivalente ao computed de um componente
         pegarTime(state) {
             return function (codigo) {
-                return state.times.filter(t => t.codigo === codigo)[0]
+                let teste = state.times.filter(t => t.id === codigo)[0]
+                debugger
+                return teste
             }
         }
     },

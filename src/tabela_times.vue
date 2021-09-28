@@ -9,6 +9,7 @@
         <th>info</th>
         <th>Editar</th>
         <th>Apagar</th>
+        <th>Elenco</th>
       </tr>
       </thead>
       <tbody>
@@ -23,7 +24,9 @@
         <td>
           <span class="button is-loading" v-if="carregando">carregando</span>
           <button class="button is-small is-danger" v-else @click="actions_time_apagar(time)">apagar</button>
-<!--          <router-link class="button is-small is-link" :to="{name: time}"></router-link>-->
+        </td>
+        <td>
+          <router-link class="button is-small is-link" :to="{ name: 'time', params: { id: time.id }}">Ver time</router-link>
         </td>
       </tr>
       </tbody>

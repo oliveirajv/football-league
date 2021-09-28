@@ -44,7 +44,7 @@ export default {
   computed: {
     ...mapGetters(['pegarTime']),
     codigo() {
-      return this.$route.params.codigo
+      return this.$route.params.id
     },
     produto() {
       return this.pegarTime(this.codigo)

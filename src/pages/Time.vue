@@ -22,7 +22,7 @@ export default {
   // Passar o formulário de jogadores no "components".
   components: {tabela_time},
   mounted() {
-    this.$store.dispatch('actions_jogadores_carregar')
+    this.$store.dispatch('actions_times_carregar')
   }
 }
 </script>
