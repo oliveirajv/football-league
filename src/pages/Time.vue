@@ -1,6 +1,8 @@
 <template>
-  <h1>É para aparecer a chapecoense.</h1>
-  <tabela_time/>
+  <router-link class="button " to="/times">Voltar</router-link>
+  <div>
+    <tabela_time/>
+  </div>
 </template>
 
 <script>
