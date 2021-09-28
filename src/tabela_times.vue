@@ -13,7 +13,7 @@
       </tr>
       </thead>
       <tbody>
-      <tr v-for="(time, index) in times">
+      <tr v-for="time in times">
         <td>{{ time.nome }}</td>
         <td>{{ time.estado }}</td>
         <td>{{ time.gols }}</td>

@@ -1,14 +1,15 @@
 <template>
   <div>
     <h1>{{ codigo }}</h1>
-
-    <ul>
-      <li v-for="time in produto.times" :key="time.id">
-        <router-link :to="{name: 'time', params: {codigo: produto.codigo, tamanho: time.id }}">
-          {{ time.nome }}
-        </router-link>
-      </li>
-    </ul>
+    <h1>Time: {{ time.nome }}</h1>
+    <h1>Estado: {{ time.estado }}</h1>
+<!--    <ul>-->
+<!--      <li v-for="time in time.times">-->
+<!--        <router-link :to="{name: 'time', params: {codigo: time.id }}">-->
+<!--          {{ time.nome }}-->
+<!--        </router-link>-->
+<!--      </li>-->
+<!--    </ul>-->
 <!--    <table class="table is-hoverable">-->
 <!--      <thead>-->
 <!--      <tr>-->
@@ -46,7 +47,7 @@ export default {
     codigo() {
       return this.$route.params.id
     },
-    produto() {
+    time() {
       return this.pegarTime(this.codigo)
     }
   },
