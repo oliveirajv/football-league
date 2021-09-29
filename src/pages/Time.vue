@@ -19,6 +19,7 @@ import formulario_jogadores from '../formulario_jogadores.vue'
 let jogadorNovo = () => {
   return {
     'id': 'INCREMENT',
+    'timeId': 'INCREMENT',
     'nome': '',
     'camisa': '',
     'gols': '',

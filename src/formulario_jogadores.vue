@@ -1,8 +1,8 @@
 <template>
   <div>
     <Campo nome="Nome" v-model="jogador.nome"></Campo>
-    <Campo nome="Camisa" tipo="number" v-model="jogador.camisa"></Campo>
-    <Campo nome="Gols" tipo="number" v-model="jogador.gols"></Campo>
+    <Campo nome="Camisa" v-model="jogador.camisa"></Campo>
+    <Campo nome="Gols" v-model="jogador.gols"></Campo>
     <CampoDropDown nome="Posição" v-model="jogador.posicao" :itens="POSICOES"></CampoDropDown>
 
     <span class="button is-loading" v-if="carregando">carregando...</span>

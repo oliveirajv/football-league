@@ -5,74 +5,67 @@
       "estado": "SC",
       "gols": "9",
       "info": "Força chape!",
-      "id": "1"
+      "id": 1
     },
     {
       "nome": "Vitoria",
       "estado": "BA",
       "gols": "18",
       "info": "Um time não tão vitorioso.",
-      "id": "2"
-    },
-    {
-      "nome": "Juventudes",
-      "estado": "DF",
-      "gols": "9",
-      "info": "Já foi um time jovem",
-      "id": "LoTaM19"
+      "id": 2
     }
   ],
   "jogadores": [
     {
       "nome": "Jorge Ramos",
-      "camisa": 3,
-      "gols": 0,
+      "camisa": "3",
+      "gols": "0",
       "posicao": "Zagueiro",
-      "timeId": "1",
-      "id": "1"
+      "timeId": 1,
+      "id": 1
     },
     {
       "nome": "Memphis Depay",
-      "camisa": 9,
-      "gols": 0,
+      "camisa": "9",
+      "gols": "0",
       "posicao": "Centroavante",
-      "timeId": "2",
-      "id": "2"
+      "timeId": 2,
+      "id": 2
     },
     {
       "nome": "Lucas Paquetá",
-      "camisa": 10,
-      "gols": 1,
+      "camisa": "10",
+      "gols": "1",
       "posicao": "Meio-campo",
-      "timeId": "1",
-      "id": "1"
+      "timeId": 1,
+      "id": 1
     },
     {
       "nome": "Neymar Jr.",
-      "camisa": 10,
-      "gols": 1,
+      "camisa": "10",
+      "gols": "1",
       "posicao": "Ponta esquerda",
-      "timeId": "2",
-      "id": "2"
+      "timeId": 2,
+      "id": 2
     }
   ],
   "partidas": [
     {
-      "id": "1",
+      "id": 1,
       "timeCasa": 1,
       "timeFora": 2
     }
   ],
   "gols": [
     {
-      "id": "1",
-      "partidaId": "1",
-      "jogadorId": "1"
+      "id": 1,
+      "partidaId": 1,
+      "jogadorId": 1
     },
     {
-      "id": "1",
-      "partidaId": "1",
-      "jogadorId": "2"
+      "id": 2,
+      "partidaId": 1,
+      "jogadorId": 2
     }
   ]
 }
