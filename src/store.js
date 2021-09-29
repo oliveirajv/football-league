@@ -14,14 +14,12 @@ const store = createStore({
     getters: { // equivalente ao computed de um componente
         pegarTime(state) {
             return function (codigo) {
-              return state.times.filter(t => t.id === codigo)[0]
+                return state.times.filter(t => t.id === codigo)[0]
             }
         },
         pegarJogadores(state) {
             return function (codigo) {
-                let teste = state.jogadores.filter(j => j.timeId === codigo)[0]
-                debugger
-                return teste
+                return state.jogadores.filter(j => j.timeId === codigo)
             }
         }
     },

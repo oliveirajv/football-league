@@ -1,4 +1,4 @@
-import { createApp } from 'vue'
+import {createApp} from 'vue'
 import store from './store'
 import rotas from "./rotas";
 import mitt from 'mitt'

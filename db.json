@@ -10,7 +10,7 @@
     {
       "nome": "Vitoria",
       "estado": "BA",
-      "gols": 18,
+      "gols": "18",
       "info": "Um time não tão vitorioso.",
       "id": "2"
     }
@@ -29,7 +29,7 @@
       "camisa": 9,
       "gols": 0,
       "posicao": "Centroavante",
-      "timeId": "1",
+      "timeId": "2",
       "id": "2"
     },
     {
@@ -37,7 +37,7 @@
       "camisa": 10,
       "gols": 1,
       "posicao": "Meio-campo",
-      "timeId": "2",
+      "timeId": "1",
       "id": "1"
     },
     {

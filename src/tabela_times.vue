@@ -26,7 +26,8 @@
           <button class="button is-small is-danger" v-else @click="actions_time_apagar(time)">apagar</button>
         </td>
         <td>
-          <router-link class="button is-small is-link" :to="{ name: 'time', params: { id: time.id }}">Ver time</router-link>
+          <router-link class="button is-small is-link" :to="{ name: 'time', params: { id: time.id }}">Ver time
+          </router-link>
         </td>
       </tr>
       </tbody>
@@ -39,7 +40,6 @@ import {mapState, mapActions} from 'vuex'
 
 export default {
   name: 'tabela_times',
-
   computed: {
     ...mapState(['times', 'carregando']),
   },
