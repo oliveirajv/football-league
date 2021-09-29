@@ -26,7 +26,7 @@
         </td>
         <td>
           <span class="button is-loading" v-if="carregando">carregando</span>
-          <button class="button is-danger" v-else @click="actions_time_apagar(jogador)">apagar</button>
+          <button class="button is-danger" v-else @click="actions_jogador_apagar(jogador)">apagar</button>
         </td>
       </tr>
       </tbody>

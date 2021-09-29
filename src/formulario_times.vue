@@ -27,7 +27,6 @@ export default {
       time: {}
     }
   },
-
   computed: {
     ...mapState(['carregando'])
   },

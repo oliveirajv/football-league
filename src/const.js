@@ -32,7 +32,7 @@ const ESTADOS = [
     'TO'
 ]
 
-const POSICAO = [
+const POSICOES = [
     'Goleiro',
     'Lateral',
     'Zagueiro',
@@ -43,5 +43,5 @@ const POSICAO = [
     'Ponta esquerda',
 ]
 
-export {ESTADOS, TIMESURL, JOGADORESURL, PARTIDASURL, POSICAO}
+export {ESTADOS, TIMESURL, JOGADORESURL, PARTIDASURL, POSICOES}
 

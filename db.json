@@ -13,6 +13,13 @@
       "gols": "18",
       "info": "Um time não tão vitorioso.",
       "id": "2"
+    },
+    {
+      "nome": "Juventudes",
+      "estado": "DF",
+      "gols": "9",
+      "info": "Já foi um time jovem",
+      "id": "LoTaM19"
     }
   ],
   "jogadores": [
