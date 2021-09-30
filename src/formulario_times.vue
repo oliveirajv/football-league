@@ -2,9 +2,7 @@
   <div>
     <Campo nome="Nome" v-model="time.nome"></Campo>
     <CampoDropDown nome="Estado" v-model="time.estado" :itens="ESTADOS"></CampoDropDown>
-    <Campo nome="Gols" tipo="number" v-model="time.gols"></Campo>
     <CampoText tipo="texto" nome="Info" v-model="time.info"></CampoText>
-
     <span class="button is-loading" v-if="carregando">carregando...</span>
     <button class="button is-success" v-else @click="salvar">salvar</button>
   </div>
