@@ -47,13 +47,13 @@ export default {
     }
   },
   created() {
-    this.$bus.on('editar', (jogador) => {
+    this.$bus.on('editar_jogador', (jogador) => {
       this.editando = jogador
       this.jogador = {...jogador}
     })
   },
   unmounted() {
-    this.$bus.off('editar')
+    this.$bus.off('editar_jogador')
   }
 }
 </script>

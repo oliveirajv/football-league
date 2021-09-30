@@ -19,7 +19,7 @@
         <td>{{ time.gols }}</td>
         <td>{{ time.info }}</td>
         <td>
-          <button class="button is-small is-info" @click="editar(time)">editar</button>
+          <button class="button is-small is-info" @click="editar_time(time)">editar</button>
         </td>
         <td>
           <span class="button is-loading" v-if="carregando">carregando</span>
@@ -45,8 +45,8 @@ export default {
   },
   methods: {
     ...mapActions(['actions_time_apagar']),
-    editar(time) {
-      this.$bus.emit('editar', time)
+    editar_time(time) {
+      this.$bus.emit('editar_time', time)
     }
   }
 }

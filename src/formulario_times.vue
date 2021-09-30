@@ -46,13 +46,13 @@ export default {
     }
   },
   created() {
-    this.$bus.on('editar', (time) => {
+    this.$bus.on('editar_time', (time) => {
       this.editando = time
       this.time = {...time}
     })
   },
   unmounted() {
-    this.$bus.off('editar')
+    this.$bus.off('editar_time')
   }
 }
 </script>

@@ -3,7 +3,7 @@
     {
       "nome": "Chapecoense",
       "estado": "SC",
-      "gols": "9",
+      "gols": "50",
       "info": "Força chape!",
       "id": 1
     },
@@ -13,22 +13,29 @@
       "gols": "18",
       "info": "Um time não tão vitorioso.",
       "id": 2
+    },
+    {
+      "nome": "Flamengo",
+      "estado": "RJ",
+      "gols": "0",
+      "info": "Eu teria um desgosto profundo se faltasse o Flamengo no mundo.",
+      "id": 3
     }
   ],
   "jogadores": [
     {
       "nome": "Jorge Ramos",
       "camisa": "3",
-      "gols": "0",
+      "gols": "2",
       "posicao": "Zagueiro",
       "time_id": 1,
       "id": 1
     },
     {
-      "nome": "Memphis Depay",
-      "camisa": "9",
-      "gols": "0",
-      "posicao": "Centroavante",
+      "nome": "Neymar Jr.",
+      "camisa": "10",
+      "gols": "11",
+      "posicao": "Ponta esquerda",
       "time_id": 2,
       "id": 2
     },
@@ -47,6 +54,22 @@
       "posicao": "Ponta esquerda",
       "time_id": 2,
       "id": 2
+    },
+    {
+      "nome": "Shaolin matador de porco",
+      "camisa": "9",
+      "gols": "99",
+      "posicao": "Centroavante",
+      "time_id": "1",
+      "id": 3
+    },
+    {
+      "nome": "Diego Alves",
+      "camisa": "1",
+      "gols": "0",
+      "posicao": "Goleiro",
+      "time_id": "3",
+      "id": 4
     }
   ],
   "partidas": [

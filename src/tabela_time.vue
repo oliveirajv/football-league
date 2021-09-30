@@ -21,7 +21,7 @@
         <td>{{ jogador.gols }}</td>
         <td>{{ jogador.posicao }}</td>
         <td>
-          <button class="button is-info" @click="editar(jogador)">editar</button>
+          <button class="button is-info" @click="editar_jogador(jogador)">editar</button>
         </td>
         <td>
           <span class="button is-loading" v-if="carregando">carregando</span>
@@ -53,8 +53,8 @@ export default {
   },
   methods: {
     ...mapActions(['actions_jogador_apagar']),
-    editar(jogador) {
-      this.$bus.emit('editar', jogador)
+    editar_jogador(jogador) {
+      this.$bus.emit('editar_jogador', jogador)
     }
   }
 }
