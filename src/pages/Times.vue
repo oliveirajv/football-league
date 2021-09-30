@@ -1,5 +1,5 @@
 <template>
-  <router-link class="button" to="/">Voltar</router-link>
+  <router-link class="button" :to="{ name: 'inicio' }">Voltar</router-link>
   <div class="columns">
     <div class="column">
       <formulario_times/>
