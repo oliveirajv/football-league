@@ -13,13 +13,13 @@ const store = createStore({
     },
     getters: { // equivalente ao computed de um componente
         pegarTime(state) {
-            return function (codigo) {
-                return state.times.filter(t => ""+t.id === codigo)[0]
+            return function (idDoTime) {
+                return state.times.filter(t => ""+t.id === idDoTime)[0]
             }
         },
         pegarJogadores(state) {
-            return function (codigo) {
-                return state.jogadores.filter(j => ""+j.time_id === codigo)
+            return function (idDoTime) {
+                return state.jogadores.filter(j => ""+j.time_id === idDoTime)
             }
         }
     },

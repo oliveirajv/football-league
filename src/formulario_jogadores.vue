@@ -40,7 +40,7 @@ export default {
         this.editando = false
         this.jogador = {}
       } else {
-        this.jogador['time_id'] = this.$route.params.codigo
+        this.jogador['time_id'] = this.$route.params.id
         await this.$store.dispatch('actions_jogador_criar', this.jogador)
         this.jogador = {}
       }

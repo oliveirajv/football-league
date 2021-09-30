@@ -1,6 +1,5 @@
 <template>
   <div>
-    <h1>{{ codigo }}</h1>
     <h1>Time: {{ time.nome }}</h1>
     <h1>Estado: {{ time.estado }}</h1>
     <h1>Descrição: {{ time.info }}</h1>
@@ -42,14 +41,14 @@ export default {
   computed: {
     ...mapState(['jogadores', 'carregando']),
     ...mapGetters(['pegarTime', 'pegarJogadores']),
-    codigo() {
+    timeIdUrl() {
       return this.$route.params.id
     },
     time() {
-      return this.pegarTime(this.codigo)
+      return this.pegarTime(this.timeIdUrl)
     },
     jogadores() {
-      return this.pegarJogadores(this.codigo)
+      return this.pegarJogadores(this.timeIdUrl)
     }
   },
   methods: {
