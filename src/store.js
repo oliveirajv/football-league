@@ -19,7 +19,7 @@ const store = createStore({
         },
         pegarJogadores(state) {
             return function (codigo) {
-                return state.jogadores.filter(j => ""+j.timeId === codigo)
+                return state.jogadores.filter(j => ""+j.time_id === codigo)
             }
         }
     },
