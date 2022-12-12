@@ -1,5 +1,6 @@
 # Football League
  
- See CRUD of soccer teams, CRUD of players from these teams, matches, goals and much more.
+ CRUD (Create, Read, Update and Delete) of football league.
 
- Final project from Front-end subject.
+- [x] CRUD of team
+- [x] CRUD of player
