@@ -17,7 +17,7 @@ With [Node.js](https://nodejs.org/en/download/) installed, run in terminal:
 > npm run build
 
 5° step.
-> npm run dev
+> npm run serve
 
 If don't work on the first try, don't worry, close the terminal tabs and run steps 3 and 5 again.
 
