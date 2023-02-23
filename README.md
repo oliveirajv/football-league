@@ -8,7 +8,7 @@
 
 2° Step
 
-> npm run serve
+> npm run dev
 
 - [x] CRUD of team
 - [x] CRUD of player
