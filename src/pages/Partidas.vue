@@ -1,10 +1,10 @@
 <template>
-  <router-link class="button" :to="{ name: 'inicio' }">Voltar</router-link>
+	<router-link :to="{ name: 'inicio' }" class="button">Voltar</router-link>
 </template>
 
 <script>
 export default {
-  name: "Partidas"
+	name: "Partidas"
 }
 </script>
 

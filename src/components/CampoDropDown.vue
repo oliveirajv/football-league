@@ -20,7 +20,7 @@ export default {
   props: ['nome', 'modelValue', 'itens'],
   methods: {
     atualizar() {
-      this.$emit('bombom')
+      this.$emit('atualizou')
     }
   }
 }

@@ -10,6 +10,7 @@
     "axios": "^1.4.0",
     "buefy": "^0.9.23",
     "follow-redirects": "^1.15.2",
+    "json-server": "^0.17.4",
     "mitt": "^3.0.0",
     "nanoid": "^4.0.2",
     "vue": "^3.2.47",
@@ -19,6 +20,6 @@
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.2.1",
     "@vue/compiler-sfc": "^3.2.47",
-    "vite": "^4.3.9"
+    "vite": "^4.5.0"
   }
 }

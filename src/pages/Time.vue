@@ -1,5 +1,5 @@
 <template>
-  <router-link class="button" :to="{ name: 'inicio' }">Voltar</router-link>
+  <router-link :to="{ name: 'times' }" class="button">Voltar</router-link>
   <div class="columns">
     <div class="column">
       <formulario_jogadores/>
